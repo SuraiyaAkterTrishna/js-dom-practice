@@ -38,3 +38,8 @@ const updateImg = document.getElementById('update');
 updateImg.addEventListener('mouseenter', function(){
     updateImg.setAttribute('src','images/bags/bag-2.png')
 })
+
+const bgChanged = document.getElementById('panda-bg-change');
+bgChanged.addEventListener('dblclick', function(){
+    bgChanged.style.backgroundColor = 'orange';
+})
