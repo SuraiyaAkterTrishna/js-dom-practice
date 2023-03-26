@@ -29,7 +29,12 @@ confirmSubmit.addEventListener('keyup', function(event){
         let submitBtn = document.getElementById('submit-btn');
         submitBtn.disabled = false;
         submitBtn.addEventListener('click', function(){
-            console.log('Email submitted');
+            // console.log('Email submitte');
         })
     }
+})
+
+const updateImg = document.getElementById('update');
+updateImg.addEventListener('mouseenter', function(){
+    updateImg.setAttribute('src','images/bags/bag-2.png')
 })
