@@ -10,3 +10,7 @@ for (const card of cards) {
     card.style.borderRadius = '30px';
     card.style.border = '0px';
 }
+
+function clickMe(){
+    console.log('button clicked');
+}
