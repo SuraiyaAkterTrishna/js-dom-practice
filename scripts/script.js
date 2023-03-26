@@ -4,3 +4,9 @@ for (const item of items) {
 }
 const backpack = document.getElementById('backpack');
 backpack.style.backgroundColor = 'tomato';
+
+const cards = document.getElementsByClassName('card');
+for (const card of cards) {
+    card.style.borderRadius = '30px';
+    card.style.border = '0px';
+}
