@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Commerce</title>
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 
+        ----------------------------------------------------------------------------------------------------------------------------------------
+        header start
+        ----------------------------------------------------------------------------------------------------------------------------------------
+    -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+          </a>
+          <form class="d-flex m-auto w-100 mx-5" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#shoes">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#backpack">Backpack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 
+        ----------------------------------------------------------------------------------------------------------------------------------------
+        main start
+        ----------------------------------------------------------------------------------------------------------------------------------------
+    -->
+  <main>
+    <!-- 
+        ----------------------------------------------------------------------------------------------------------------------------------------
+        banner start
+        ----------------------------------------------------------------------------------------------------------------------------------------
+    -->
+    <section class="banner container mt-5 panda-bg-color">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active p-5">
+            <div class="row">
+              <div class="col-md-7 d-flex align-items-center">
+                <div>
+                  <h1>Mega LCD TV For Sports</h1>
+                  <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
+                  <h1><span class="price">$1200</span></h1>
+                  <button class="btn buy-now-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-5">
+            <div class="row">
+              <div class="col-md-7 d-flex align-items-center">
+                <div>
+                  <h1>Cool Dude Headphone</h1>
+                  <p>This is the best headphone in the world for people who just want to waste time in front of funky
+                    world.</p>
+                  <h1><span class="price">$600</span></h1>
+                  <button class="btn buy-now-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-5">
+            <div class="row">
+              <div class="col-md-7 d-flex align-items-center">
+                <div>
+                  <h1>X-Box for your living room</h1>
+                  <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.
+                  </p>
+                  <h1><span class="price">$420</span></h1>
+                  <button class="btn buy-now-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- 
+      ----------------------------------------------------------------------------------------------------------
+      categories start 
+      ----------------------------------------------------------------------------------------------------------
+    -->
+    <section class="categories container my-5">
+      <h1 class="mb-5">Categories</h1>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 col-sm-12">
+          <div class="d-flex align-items-center justify-content-between bg-warning text-white p-4 rounded-2">
+            <h1>Watch</h1>
+            <img class="w-25" src="images/categories/watch.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-12">
+          <div class="d-flex align-items-center justify-content-between bg-success text-white p-4 rounded-2">
+            <h1>Bag</h1>
+            <img src="images/categories/bag.png " alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-12">
+          <div class="d-flex align-items-center justify-content-between bg-primary text-white p-4 rounded-2">
+            <h1>Shoes</h1>
+            <img src="images/categories/shoes.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      --------------------------------------------------------------------------------------------------------
+      shoes start 
+      --------------------------------------------------------------------------------------------------------
+    -->
+    <section class="shoes container mb-5" id="shoes">
+      <h1 class="mb-5">Shoes</h1>
+      <div class="card-group">
+        <div class="card me-5 border-0 shadow rounded-2">
+          <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Supply 350</h3>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.
+            </p>
+            <h4>$120</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="card me-5 border-0 shadow rounded-2">
+          <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Nike 360</h3>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h4>$320</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="card border-0 shadow rounded-2">
+          <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Red Airmax</h3>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h4>$350</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      ---------------------------------------------------------------------------------------------------------
+      bags start
+      ---------------------------------------------------------------------------------------------------------
+    -->
+    <section class="backpack container mb-5" id="backpack">
+      <h1 class="mb-5">Bags</h1>
+      <div class="card-group">
+        <div class="card me-5 border-0 shadow rounded-2">
+          <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Red Laltu Bag</h3>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.
+            </p>
+            <h4>$120</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="card me-5 border-0 shadow rounded-2">
+          <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Blue Niltu Bag</h3>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h4>$320</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="card border-0 shadow rounded-2">
+          <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Black Kaltu Bag</h3>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h4>$350</h4>
+            <button class="btn buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      --------------------------------------------------------------------------------------------------------
+      Subscribe start 
+      --------------------------------------------------------------------------------------------------------
+    -->
+    <section class=" container subscribe mb-5" id="subscribe">
+      <h1 class="mb-5">Subscribe</h1>
+      <div class="d-flex justify-content-center flex-column align-items-center panda-bg-color p-5">
+        <div>
+          <h3>LET'S STAY IN TOUCH</h3>
+          <p class="text-secondary">Get updates on sales, specials and more</p>
+          <form>
+            <input class="form-control w-100 mb-3" type="text" placeholder="" aria-label="default input example">
+            <button class="btn buy-now-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 
+        -------------------------------------------------------------------------------------------------------
+        footer start
+        -------------------------------------------------------------------------------------------------------
+    -->
+  <footer class="text-center">
+    <p>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+  </footer>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
