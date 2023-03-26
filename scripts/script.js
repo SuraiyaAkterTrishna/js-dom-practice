@@ -14,3 +14,10 @@ for (const card of cards) {
 function clickMe(){
     console.log('button clicked');
 }
+
+const buttons = document.getElementsByClassName('buy-now-btn');
+for (const button of buttons) {
+    button.addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
+    })
+}
